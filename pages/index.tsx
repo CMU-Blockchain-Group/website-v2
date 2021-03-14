@@ -1,9 +1,14 @@
 import Head from 'next/head'
 import { Button } from '../components/button';
+import { Navbar } from '../components/navbar';
 
 export default function Home() {
   return (
-    <div className="container mx-auto">
+    
+    <div className="container mx-auto min-w-full">
+     
+      <Navbar>
+      </Navbar>
       <div className="grid grid-rows-3 auto-rows-min">
         <div className="flex flex-row justify-end my-12">
           <div className="px-2 transition duration-300 ease-in-out transform hover:scale-105"><h3>link 3</h3></div>
