@@ -27,9 +27,9 @@ export default function Home() {
           </div>
         </div>
 
-        <Sectionheader headerName="Section Header"/>
+        <Sectionheader headerName="Card Samples"/>
 
-        <div className="p-2 grid grid-cols-3 gap-x-2">
+        <div className="p-2 grid grid-cols-3 gap-x-2 h-80">
           <Card>
             {/* <CardContent
               title={<h2 className="text-center text-4xl font-bold">Hello World</h2>}
@@ -48,21 +48,87 @@ export default function Home() {
                   aaaaaaaaaaaaaaaaaaaaaa
                 </p>
             </CardContent> */}
-            <div className="md:flex">
-              <div className="md:flex-shrink-0">
-                <img className="h-48 w-full object-cover md:w-48" src="/favicon.ico" alt="Man looking at item at a store"/>
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <img className="h-50 w-full object-cover md:w-48" src="/favicon.ico" alt="Man looking at item at a store"/>
               </div>
               <div className="p-8">
                 <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
                 <a href="#" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
-                <p className="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+                <p className="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.aaaaaaaa </p>
               </div>
             </div>
           </Card>
-          <Card />
+          <Card>
+           <CardContent
+              title={<h2 className="text-center text-4xl font-bold">Hello World</h2>}
+              orientation="col"
+              footer={funButton}
+            >
+            <div className="flex flex-row justify-center">
+              <Image
+                  src="/favicon.ico"
+                  alt="picture"
+                  width={100}
+                  height={100}
+                  layout='fixed'
+                />
+            </div>
+            <div className="flex flex-row justify-center w-full">
+              <p className="break-all">
+                 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                </p>
+            </div>
+               
+            </CardContent> 
+          </Card>
           <Card />
         </div>
-
+      <div className="flex flex-col h-screen">
+      <Sectionheader headerName="About us" />
+      <div className="grid grid-cols-2 h-full">
+        <Card>
+          <CardContent
+          title={<h2 className="text-center text-5xl font-bold">Who we are</h2>}
+          orientation="col"
+          >
+            <div className=" flex flex-col">
+              <div className=" flex flex-shrink-0 flex-row justify-center">
+                <div className="h-80">
+                <img className="h-80 w-full object-cover md:w-96" src="/favicon.ico" alt="Man looking at item at a store"/>
+                </div>
+              </div>
+              <div className="p-8">
+                <p className="mt-2 text-gray-500">The CMU Blockchain Group is a software developer focused group of students dedicated to bringing high-quality presentations and workshops to the students of CMU and citizens of Pittsburgh overall. We want to equip people with the foundational knowledge to reason blockchain developments from an engineering perspective, taking into account technical, economic and policy factors. We want to build a community where students
+                 and faculty can come together to network and learn from each other,
+                 as well as to collaborate on new and existing ideas.</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent
+          title={<h2 className="text-center text-5xl font-bold">What we do</h2>}
+          orientation="col"
+          >
+            <div className=" flex flex-col">
+              <div className="h-80 pt-20">
+              <div className=" flex flex-shrink-0 flex-row justify-center">
+                <img className=" w-full object-cover md:w-96" src="/favicon.ico" alt="Man looking at item at a store"/>
+                <img className=" w-full object-cover md:w-96" src="/filler.jpg" alt="Man looking at item at a store"/>
+                <img className=" w-full object-cover md:w-96" src="/favicon.ico" alt="Man looking at item at a store"/>
+              </div>
+              </div>
+              <div className="p-8">
+              <p className="mt-2 text-gray-500">The CMU Blockchain Group is a software developer focused group of students dedicated to bringing high-quality presentations and workshops to the students of CMU and citizens of Pittsburgh overall. We want to equip people with the foundational knowledge to reason blockchain developments from an engineering perspective, taking into account technical, economic and policy factors. We want to build a community where students
+                 and faculty can come together to network and learn from each other,
+                 as well as to collaborate on new and existing ideas.</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+      </div>
       </div>
     </div>
   )
